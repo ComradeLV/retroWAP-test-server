@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+  <card id="main" title="retroWAP Demo">
+    <p>
+      <b>retroWAP</b> <i>test</i> <u>deck</u><br/>
+      <big>Big text</big> and <small>small text</small>
+    </p>
+    <p>
+      Visit the <a href="#form">Form Card</a><br/>
+      Or jump to <a href="#nav">Navigation Card</a>
+    </p>
+    <do type="accept" label="Go Form">
+      <go href="#form" />
+    </do>
+  </card>
+
+  <card id="form" title="Inputs">
+    <p><b>Inputs</b> with restrictions</p>
+    <p>Text: <input name="username" type="text" value="guest"/></p>
+    <p>Password: <input name="password" type="password"/></p>
+    <p>Numeric: <input name="pin" type="numeric"/></p>
+    <p>Pick one:
+      <select name="color">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+    </p>
+    <p>Pick many:
+      <select name="fruits" multiple="true">
+        <option value="apple" selected="true">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+      </select>
+    </p>
+    <p>Notes:</p>
+    <textarea name="notes">Multi-line\ntext area</textarea>
+    <p>
+      <a href="#main">Back to Main</a>
+    </p>
+  </card>
+
+  <card id="nav" title="Navigation">
+    <p>
+      This card tests navigation links and actions.<br/>
+      <a href="#main">Back to Main</a>
+    </p>
+    <do type="prev" label="Back">
+      <prev />
+    </do>
+  </card>
+</wml>
