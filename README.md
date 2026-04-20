@@ -1,6 +1,6 @@
 # retroWAP Test Server
 
-Minimal local WML server used to exercise retroWAP's rendering and navigation.
+Minimal local WML server used to exercise [retroWAP](https://github.com/ComradeLV/retroWAP)'s rendering and navigation.
 
 ## Purpose
 - Serve a single WML deck over HTTP with the correct content-type.
